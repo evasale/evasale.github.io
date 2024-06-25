@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Price Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sales Price Calculator</h1>
+        <button id="toggle-button">Mode</button>
+        <form id="priceCalculatorForm">
+            <div class="form-group">
+                <label for="runtime">Daily Runtime(Min):</label>
+                <input type="number" id="runtime" name="runtime" value="0">
+            </div>
+            <div class="form-group">
+                <label for="ad_place">Locations:</label>
+                <select id="ad_place" name="ad_place">
+                    <option value="GT">GT Central</option>
+                    <option value="Vid">Vidyadhar_Nagar</option>
+                    <option value="Rid">Ridhi_Sidhi</option>
+                    <option value="GT&Vid">GT Central & Vidyadhar_Nagar</option>
+                    <option value="GT&Rid">GT Central & Ridhi_Sidhi</option>
+                    <option value="Vid&Rid">Vidyadhar_Nagar & Ridhi_Sidhi</option>
+                    <option value="all">GT Central & Vidyadhar_Nagar & Ridhi_Sidhi</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="screenTime">Parts of Day:</label>
+                <select id="screenTime" name="screenTime">
+                    <option value="mor">Morning</option>
+                    <option value="noon">Noon</option>
+                    <option value="eve">Evening</option>
+                    <option value="night">Night</option>
+                    <option value="mor&noon">Morning & Noon</option>
+                    <option value="mor&eve">Morning & Evening</option>
+                    <option value="mor&night">Morning & Night</option>
+                    <option value="noon&eve">Noon & Evening</option>
+                    <option value="noon&night">Noon & Night</option>
+                    <option value="eve&night">Evening & Night</option>
+                    <option value="mor&noon&eve&night">Morning & Noon & Evening & Night</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="duration">Duration:</label>
+                <select id="duration" name="duration">
+                    <option value="single">One Day</option>
+                    <option value="week">Week</option>
+                    <option value="month">Month</option>
+                    <option value="half_year">Half_Year</option>
+                </select>
+            </div>
+            <!-- <div class="form-group">
+                <label for="additionalFeatures">Additional Features:</label>
+                <input type="checkbox" id="feature1" name="features" value="feature1"> Feature 1<br>
+                <input type="checkbox" id="feature2" name="features" value="feature2"> Feature 2<br>
+                <input type="checkbox" id="feature3" name="features" value="feature3"> Feature 3<br>
+                <input type="checkbox" id="feature4" name="features" value="feature4"> Feature 4<br>
+            </div> -->
+            <button type="button" onclick="calculatePrice()">Calculate Price</button>
+        </form>
+        <div id="result">
+            <h2>Total Price: ₹<span id="totalPrice">0.00</span></h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

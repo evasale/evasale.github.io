@@ -1,0 +1,115 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.5s; /* add transition effect */
+  }
+  
+  body.dark-mode {
+    background-color: #212121; /* dark background */
+  }
+  
+  body.bright-mode {
+    background-color: #f2f2f2; /* bright background */
+  }
+  
+  .container {
+    background: #333; /* dark container background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    text-align: center;
+    transition: background-color 0.5s; /* add transition effect */
+  }
+  
+  .container.dark-mode {
+    background: #333; /* dark container background */
+  }
+  
+  .container.bright-mode {
+    background: #fff; /* bright container background */
+  }
+  
+  h1 {
+    color: #fff; /* white text */
+    margin-bottom: 20px;
+    transition: color 0.5s; /* add transition effect */
+  }
+  
+  h1.dark-mode {
+    color: #fff; /* white text */
+  }
+  
+  h1.bright-mode {
+    color: #333; /* dark text */
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ccc; /* light gray text */
+    transition: color 0.5s; /* add transition effect */
+  }
+  
+  label.dark-mode {
+    color: #ccc; /* light gray text */
+  }
+  
+  label.bright-mode {
+    color: #666; /* dark gray text */
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background: #6600cc; /* dark blue button background */
+    color: #fff; /* white button text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s; /* add transition effect */
+  }
+  
+  button.dark-mode {
+    background: #6600cc; /* dark blue button background */
+  }
+  
+  button.bright-mode {
+    background: #007bff; /* bright blue button background */
+  }
+  
+  button:hover {
+    background: #440088; /* darker blue button background on hover */
+  }
+  
+  #result {
+    margin-top: 20px;
+  }
+  
+  #totalPrice {
+    font-weight: bold;
+    color: #ff9900; /* orange text for total price */
+    transition: color 0.5s; /* add transition effect */
+  }
+  
+  #totalPrice.dark-mode {
+    color: #ff9900; /* orange text for total price */
+  }
+  
+  #totalPrice.bright-mode {
+    color: #008000; /* green text for total price */
+  }
